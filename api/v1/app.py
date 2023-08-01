@@ -22,7 +22,7 @@ if __name__ == "__main__":
     """Set threaded=True, will tell Flask to use multiple
     threads to handle requests. This can improve performance, but
     it can also make it more difficult to debug problems.
-	"""
+    """
     app.run(
         debug=True, host=getenv('HBNB_API_HOST', default='0.0.0.0'),
         port=int(getenv('HBNB_API_PORT', default=5000)), threaded=True
